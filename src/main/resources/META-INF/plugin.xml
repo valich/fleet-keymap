@@ -1,0 +1,26 @@
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+<idea-plugin>
+    <!-- Unique identifier of the plugin. It should be FQN. It cannot be changed between the plugin versions. -->
+    <id>com.github.valich.FleetKeymap</id>
+
+    <!-- Public plugin name should be written in Title Case.
+         Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-name -->
+    <name>Fleet Keymap</name>
+
+    <vendor email="valentin.fondaratov@jetbrains.com" url="https://github.com/valich">Valentin Fondaratov</vendor>
+
+    <description><![CDATA[
+    A plugin adding Fleet keymap to IntelliJ product family
+  ]]></description>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <bundledKeymap file="fleet_macos.xml" os="mac" />
+        <bundledKeymap file="fleet_pc.xml" os="linux" />
+        <bundledKeymap file="fleet_pc.xml" os="windows" />
+    </extensions>
+    <applicationListeners>
+        <listener class="com.github.valich.fleetkeymap.DoubleSettingOverrider" topic="com.intellij.openapi.actionSystem.ex.AnActionListener" />
+    </applicationListeners>
+</idea-plugin>
