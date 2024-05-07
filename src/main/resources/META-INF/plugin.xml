@@ -16,9 +16,8 @@
     <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <bundledKeymap file="fleet_macos.xml" os="mac" />
-        <bundledKeymap file="fleet_pc.xml" os="linux" />
-        <bundledKeymap file="fleet_pc.xml" os="windows" />
+        <bundledKeymap file="Fleet (macOS).xml" />
+        <bundledKeymap file="Fleet.xml" />
     </extensions>
     <applicationListeners>
         <listener class="com.github.valich.fleetkeymap.DoubleSettingOverrider" topic="com.intellij.openapi.actionSystem.ex.AnActionListener" />

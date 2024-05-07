@@ -1,11 +1,11 @@
 plugins {
     id("java")
     id("org.jetbrains.kotlin.jvm") version "1.9.0"
-    id("org.jetbrains.intellij") version "1.15.0"
+    id("org.jetbrains.intellij") version "1.17.3"
 }
 
 group = "com.github.valich"
-version = "0.1"
+version = "0.2"
 
 repositories {
     mavenCentral()
@@ -16,7 +16,6 @@ repositories {
 intellij {
     version.set("2022.2.5")
     type.set("IC") // Target IDE Platform
-
     plugins.set(listOf(/* Plugin Dependencies */))
 }
 
