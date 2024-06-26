@@ -16,3 +16,8 @@ jobs:
       uses: gradle/gradle-build-action@v3
     - name: Build with Gradle
       run: ./gradlew build
+    - name: Upload plugin zip
+      uses: actions/upload-artifact@v3
+      with:
+        name: FleetKeymap.zip
+        path: build/distributions/*.zip
