@@ -16,6 +16,11 @@
   </action>
 
   <action id="ActivateVersionControlToolWindow" />
+
+  <action id="AIAssistant.Editor.AskAiAssistantInEditor">
+    <keyboard-shortcut first-keystroke="ctrl period" />
+  </action>
+
   <action id="Annotate">
     <keyboard-shortcut first-keystroke="ctrl shift G" second-keystroke="ctrl shift A" />
   </action>
@@ -71,6 +76,9 @@
 
   <action id="Debug" />
   <action id="Debugger.AddToWatch" />
+  <action id="EditCellWithAIAction">
+    <keyboard-shortcut first-keystroke="ctrl period" />
+  </action>
   <action id="EditSource">
     <keyboard-shortcut first-keystroke="ctrl Down" />
     <keyboard-shortcut first-keystroke="F4" />

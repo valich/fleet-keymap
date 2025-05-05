@@ -14,8 +14,12 @@
   <action id="ActivateTerminalToolWindow">
     <keyboard-shortcut first-keystroke="ctrl BACK_QUOTE" />
   </action>
-
   <action id="ActivateVersionControlToolWindow" />
+
+  <action id="AIAssistant.Editor.AskAiAssistantInEditor">
+    <keyboard-shortcut first-keystroke="meta period" />
+  </action>
+
   <action id="Annotate">
     <keyboard-shortcut first-keystroke="ctrl G" second-keystroke="ctrl A" />
   </action>
@@ -71,6 +75,9 @@
 
   <action id="Debug" />
   <action id="Debugger.AddToWatch" />
+  <action id="EditCellWithAIAction">
+    <keyboard-shortcut first-keystroke="meta period" />
+  </action>
   <action id="EditSource">
     <keyboard-shortcut first-keystroke="meta Down" />
     <keyboard-shortcut first-keystroke="F4" />
