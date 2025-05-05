@@ -1,0 +1,23 @@
+name: Build
+
+on:
+  push:
+    branches:
+      - master
+  pull_request: null
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout sources
+      uses: actions/checkout@v4
+    - name: Setup Gradle
+      uses: gradle/actions/setup-gradle@v3
+    - name: Build with Gradle
+      run: ./gradlew build
+    - name: Upload plugin zip
+      uses: actions/upload-artifact@v4
+      with:
+        name: FleetKeymap.zip
+        path: build/distributions/*.zip
