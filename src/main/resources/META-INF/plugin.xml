@@ -16,7 +16,7 @@
     <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <bundledKeymap file="Fleet macOS.xml" os="mac" />
+        <bundledKeymap file="Fleet OSX.xml" os="mac" />
         <bundledKeymap file="Fleet.xml" os="linux" />
         <bundledKeymap file="Fleet.xml" os="windows" />
     </extensions>

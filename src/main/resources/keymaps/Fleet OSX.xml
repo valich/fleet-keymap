@@ -1,4 +1,4 @@
-<keymap version="1" name="Fleet macOS" parent="Mac OS X 10.5+">
+<keymap version="1" name="Fleet OSX" parent="Mac OS X 10.5+">
   <action id="$Redo">
     <keyboard-shortcut first-keystroke="meta shift Z" />
   </action>
